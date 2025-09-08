@@ -2181,10 +2181,12 @@ section#about {
   }
   
   #projects .cards-container {
+     max-width: 600px;
     padding: 0 0rem;
   }
   
   #projects .portfolio-card {
+   
     max-height: 280px;
     border-radius: 0.75rem;
   }
@@ -3069,9 +3071,13 @@ html.no-csstransitions .home-content__main {
 
     /* Responsive */
     @media (max-width: 640px) {
-      h2 {
-        font-size: 1.5rem;
-        margin-top: 20px;
+      #footer h2 {
+         margin-top: 100px;
+        color: white;
+      font-weight: 800;
+      font-size: 3rem; /* 3xl */
+      line-height: 1.2;
+      margin-bottom: 1rem;
       }
       p.description {
         font-size: 1rem;
@@ -3082,6 +3088,17 @@ html.no-csstransitions .home-content__main {
         gap: 1rem;
         flex-wrap: wrap;
       }
+      nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem; /* space-x-6 */
+      font-weight: 600;
+      font-size: 1.5rem; /* lg */
+      color: #d1d5db; /* gray-300 */
+      margin-bottom: 3.5rem;
+      user-select: none;
+    }
       nav .divider {
         height: 1rem;
       }
@@ -3650,7 +3667,7 @@ html.no-csstransitions .home-content__main {
     }
 
     .container4 {
-        max-width: 90%;
+        max-width: 80%;
     }
 
     .header h1 {
@@ -3658,7 +3675,7 @@ html.no-csstransitions .home-content__main {
     }
 
     #achievement .subtitle {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .cards-grid {
