@@ -1,0 +1,255 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Work & Education Timeline</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    background-color: #12182f;
+    color: #a0a8b9;
+    font-family: 'Inter', sans-serif;
+  }
+  main {
+    max-width: 1120px;
+    margin: 48px auto;
+    padding: 0 16px;
+  }
+
+  section.timeline {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  @media (min-width: 768px) {
+    section.timeline {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  /* Vertical line for timeline */
+  .timeline-column {
+    position: relative;
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+  @media (min-width: 768px) {
+    .timeline-column {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .timeline-column::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .timeline-item {
+    position: relative;
+    display: flex;
+    margin-bottom: 64px;
+  }
+  .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+  /* Left column items */
+  .timeline-left .timeline-item {
+    padding-left: 0;
+  }
+  .timeline-left .timeline-item .date-container {
+    flex-shrink: 0;
+    width: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 24px;
+  }
+  .timeline-left .timeline-item .date {
+    background-color: #c6f7e2;
+    color: #2f9e6a;
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    white-space: nowrap;
+  }
+ 
+  .timeline-left .timeline-item .content {
+    max-width: 400px;
+  }
+  .timeline-left .timeline-item .content p.title {
+    margin: 0 0 4px 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #e11d48;
+  }
+  .timeline-left .timeline-item .content p.title span {
+    font-weight: 700;
+    font-size: 0.625rem;
+    color: white;
+  }
+  .timeline-left .timeline-item .content p.company {
+    margin: 0 0 8px 0;
+    font-weight: 700;
+    color: white;
+  }
+  .timeline-left .timeline-item .content p.description {
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    color: #5f667a;
+  }
+  /* Right column items */
+  .timeline-right .timeline-item {
+    padding-right: 0;
+    justify-content: flex-end;
+  }
+  .timeline-right .timeline-item .date-container {
+    flex-shrink: 0;
+    width: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 24px;
+  }
+  .timeline-right .timeline-item .date {
+    background-color: #c6f7e2;
+    color: #2f9e6a;
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    white-space: nowrap;
+  }
+  
+  .timeline-right .timeline-item .content {
+    max-width: 400px;
+    text-align: right;
+  }
+  .timeline-right .timeline-item .content p.title {
+    margin: 0 0 4px 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #e11d48;
+  }
+  .timeline-right .timeline-item .content p.company {
+    margin: 0 0 8px 0;
+    font-weight: 700;
+    color: white;
+  }
+  .timeline-right .timeline-item .content p.description {
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    color: #5f667a;
+  }
+  /* Smaller text for spans in titles on left side */
+  .timeline-left .timeline-item p.title span {
+    font-weight: 700;
+    font-size: 0.625rem;
+    color: white;
+  }
+  /* Smaller text for spans in titles on right side */
+  .timeline-right .timeline-item p.title span {
+    font-weight: 700;
+    font-size: 0.625rem;
+    color: white;
+  }
+</style>
+</head>
+<body>
+<main>
+  
+  <section class="timeline" aria-label="Work and Education Timeline">
+    <div class="timeline-column timeline-left" aria-label="Work Experience">
+      <article class="timeline-item">
+        <div class="date-container">
+          <span class="date">2024 - Present</span>
+          <span class="circle" aria-hidden="true"></span>
+        </div>
+        <div class="content">
+          <p class="title">Junior Front-End Developer<span>, Full Time</span></p>
+          <p class="company">Dhrupad Technologies, Guwahati</p>
+          <p class="description">I'll design responsive websites, implement Figma designs, collaborate on UI/UX, use React, Next.js, and Tailwind CSS, write clean code, and ensure compatibility across devices.</p>
+        </div>
+      </article>
+      <article class="timeline-item">
+        <div class="date-container">
+          <span class="date" style="background:#d9f2e8; color:#2f9e6a;">2021 - 2023</span>
+          <span class="circle" aria-hidden="true"></span>
+        </div>
+        <div class="content">
+          <p class="title" style="color:#e11d48;">Web Developer<span>, Full Time</span></p>
+          <p class="company">Vikram Design Studio, Guwahati</p>
+          <p class="description">Developing and maintaining web applications using Html, Css, JavaScript, Wordpress and other related technologies</p>
+        </div>
+      </article>
+      <article class="timeline-item">
+        <div class="date-container">
+          <span class="date" style="background:#d9f2e8; color:#2f9e6a;">2021 - 2023</span>
+          <span class="circle" aria-hidden="true"></span>
+        </div>
+        <div class="content">
+          <p class="title" style="color:#e11d48;">Front-End Developer - Internship<span>, Remote</span></p>
+          <p class="company">GS Technologies, Guwahati</p>
+          <p class="description">I'll design responsive websites, implement Figma designs, collaborate on UI/UX, use React, Next.js, and Tailwind CSS, write clean code, and ensure compatibility across devices.</p>
+        </div>
+      </article>
+      <article class="timeline-item">
+        <div class="date-container">
+          <span class="date">2020 - Present</span>
+          <span class="circle" aria-hidden="true"></span>
+        </div>
+        <div class="content">
+          <p class="title" style="color:#e11d48;">Wordpress Developer<span>, Part Time</span></p>
+          <p class="company">Freelancer</p>
+          <p class="description">I'll design responsive websites, implement Figma designs, collaborate on UI/UX, use React, Next.js, and Tailwind CSS, write clean code, and ensure compatibility across devices.</p>
+        </div>
+      </article>
+    </div>
+
+
+    <div class="timeline-column timeline-right" aria-label="Education">
+      <article class="timeline-item">
+        <div class="content">
+          <p class="title">Assam Science and Technology University</p>
+          <p class="company">Master of Computer Applications</p>
+          <p class="description">Currently pursuing a Master of Computer Applications at Assam Science and Technology University, focused on building coding skills and more.</p>
+        </div>
+        <div class="date-container">
+          <span class="date">2022 - 2024</span>
+          <span class="circle" aria-hidden="true"></span>
+        </div>
+      </article>
+      <article class="timeline-item">
+        <div class="content">
+          <p class="title">Gauhati University</p>
+          <p class="company">Bachelor of Computer Applications</p>
+          <p class="description">Graduated with a Bachelor of Computer Applications from Gauhati University in 2021, laying the foundation for a career in technology.</p>
+        </div>
+        <div class="date-container">
+          <span class="date" style="background:#d9f2e8; color:#2f9e6a;">2018-2021</span>
+          <span class="circle" aria-hidden="true"></span>
+        </div>
+      </article>
+      <article class="timeline-item">
+        <div class="content">
+          <p class="title">Muhila Home Junior College</p>
+          <p class="company">HS (Science)</p>
+          <p class="description">Completed HS (Science) from Muhila Home Junior College in 2017, marking the initial steps towards a journey in academia.</p>
+        </div>
+        <div class="date-container">
+          <span class="date" style="background:#d9f2e8; color:#2f9e6a;">2015-2017</span>
+          <span class="circle" aria-hidden="true"></span>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+</body>
+</html>
